@@ -25,7 +25,6 @@ describe("App Component", () => {
 
     const plusButton = getByText("-");
     fireEvent.press(plusButton);
-
     const counterText = getByTestId("counter");
 
     expect(counterText.props.children).toBe(-1);
