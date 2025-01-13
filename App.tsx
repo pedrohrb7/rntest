@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import Message from "./src/components/Message";
 
 export default function App() {
   const [counter, setCounter] = useState(0);
@@ -21,6 +22,7 @@ export default function App() {
           <Text>+</Text>
         </TouchableOpacity>
       </View>
+      <Message />
     </View>
   );
 }
